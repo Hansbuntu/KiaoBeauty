@@ -1,0 +1,28 @@
+/* 
+    7. Feature css
+*/
+.feature__inner{
+    gap: 3rem;
+    @media only screen and (max-width: 991px) {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+.feature__items{
+    gap: 1.5rem;
+    @media only screen and (min-width: 1200px) {
+        gap: 1.8rem;
+    }
+}
+.feature__content{
+    &--title{
+        margin-bottom: 0.3rem;
+    }
+    &--desc{
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        @media only screen and (min-width: 1200px) {
+            font-size: 1.5rem;
+        }
+    }
+}

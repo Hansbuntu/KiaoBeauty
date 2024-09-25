@@ -1,0 +1,55 @@
+/* 
+    14. Small Product css 
+*/
+
+.small__product{
+  &--thumbnail{
+      overflow: hidden;
+      width: 125px;
+      @media only screen and (min-width: 1600px) {
+        width: 136px;
+      }
+  }
+  &--card{
+    gap: 1.8rem;
+    @media only screen and (min-width: 768px) {
+      gap: 1.5rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      gap: 2rem;
+    }
+    margin-bottom: 3rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:hover{
+        & .small__product--thumbnail img{
+          transform: scale(1.03);
+        }
+    }
+    & .product__card--title{
+      margin-bottom: 1.2rem;
+      @media only screen and (max-width: 1199px) {
+        margin-bottom: 0.8rem;
+        font-size: 1.5rem;
+        line-height: 2.4rem
+      }
+    }
+    & .product__card--rating{
+      margin-bottom: 0.8rem;
+      @media only screen and (min-width: 1200px) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.small__product{
+  &--step{
+    &.margin__left{
+      @media only screen and (min-width: 992px) {
+        margin-left: 3rem;
+      }
+    }
+  }
+}

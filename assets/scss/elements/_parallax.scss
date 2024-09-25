@@ -1,0 +1,127 @@
+/*
+    parallax banner css
+*/
+.parallax__banner{
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    @media only screen and (min-width: 480px) {
+        height: 40rem;
+    }
+    @media only screen and (min-width: 576px) {
+        height: 42rem;
+    }
+    @media only screen and (min-width: 768px) {
+        height: 52rem;
+    }
+    @media only screen and (min-width: 992px) {
+        height: 60rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        height: 64rem;
+    }
+    @media only screen and (min-width: 1366px) {
+        height: 70rem;
+    }
+    @media only screen and (min-width: 1600px) {
+        height: 90rem;
+    }
+}
+.parallax__bg{
+    background: url(../img/banner/parallax-banner1.png);
+    background-repeat: no-repeat;
+    background-position: 38%;
+    background-size: cover;
+    background-attachment: fixed;
+    @media only screen and (min-width: 768px) {
+        background-position: center center;
+    }
+}
+.parallax__bg2{
+    background: url(../img/banner/parallax-banner2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax__bg3{
+    background: url(../img/banner/parallax-banner3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax__bg4{
+    background: url(../img/banner/parallax-banner4.png);
+    background-repeat: no-repeat;
+    background-position: 72%;
+    background-size: cover;
+    background-attachment: fixed;
+    @media only screen and (min-width: 768px) {
+        background-position: center center;
+    }
+}
+.parallax__banner{
+    &--content{
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+        &.padding_top{
+            padding-top: 4rem;
+            @media only screen and (min-width: 480px) {
+                padding-top: 5rem;
+            }
+        }
+        &__title{
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+            font-weight: 500;
+            margin-bottom: 1.2rem;
+            @media only screen and (min-width: 480px) {
+                font-size: 2.6rem;
+                line-height: 3.7rem;
+            }
+            @media only screen and (min-width: 576px) {
+                font-size: 3rem;
+                line-height: 4.2rem;
+                margin-bottom: 1.5rem;
+            }
+            @media only screen and (min-width: 768px) {
+                font-size: 3.5rem;
+                line-height: 5rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 4rem;
+                line-height: 5.5rem;
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 4.5rem;
+                line-height: 6rem;
+            }
+            @media only screen and (min-width: 1366px) {
+                font-size: 5rem;
+                line-height: 6.5rem;
+            }
+            @media only screen and (min-width: 1600px) {
+                font-size: 5.5rem;
+                line-height: 7rem;
+            }
+        }
+        &__desc{
+            font-size: 1.5rem;
+            line-height: 2.6rem;
+            margin-bottom: 1.6rem;
+            @media only screen and (min-width: 576px) {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}

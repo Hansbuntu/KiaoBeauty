@@ -1,0 +1,18 @@
+/* 
+    10. Brand logo css
+*/
+
+.brang__logo--img{
+    margin: 0 auto;
+    opacity: 0.6;
+    &:hover{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.brand__logo--activation{
+    & .swiper-wrapper{
+        align-items: center;
+    }
+}

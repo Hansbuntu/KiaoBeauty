@@ -1,0 +1,1017 @@
+/* 
+    4. Banner css 
+*/
+.video__banner{
+    &--section{
+        &.section--padding{
+            @media only screen and (max-width: 767px) {
+                padding-top: 0;
+            }
+        }
+        &__thumbnail{
+            @media only screen and (min-width: 768px) {
+                height: 30rem;
+                object-fit: cover;
+            }
+            @media only screen and (min-width: 992px) {
+                height: 41rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                height: 51.5rem;
+            }
+            @media only screen and (min-width: 1366px) {
+                height: 55.5rem;
+            }
+        }
+    }
+    &--wrapper{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @media only screen and (max-width: 767px) {
+            position: inherit;
+            margin-top: 3rem;
+        }
+    }
+    &--inner{
+        gap: 3rem;
+        @media only screen and (min-width: 992px) {
+            gap: 5rem;
+        }
+        @media only screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &--box{
+        @media only screen and (min-width: 768px) {
+            width: 55%;
+        }
+        @media only screen and (min-width: 1200px) {
+            width: 60%;
+        }
+    }
+    &--content{
+        @media only screen and (min-width: 768px) {
+            width: 40%;
+            padding-bottom: 5rem;
+        }
+        @media only screen and (min-width: 992px) {
+            padding-bottom: 11rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding-bottom: 14rem;
+        }
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+        &__title{
+            font-size: 2rem;
+            line-height: 2.6rem;
+            margin-bottom: 1.3rem;
+            @media only screen and (min-width: 576px) {
+                font-size: 2.2rem;
+                line-height: 2.8rem;
+                margin-bottom: 1.3rem;
+            }
+            @media only screen and (min-width: 768px) {
+                line-height: 3rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 2.5rem;
+                line-height: 3.5rem;
+                margin-bottom: 1.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 3rem;
+                line-height: 4rem;
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 1366px) {
+                font-size: 3.5rem;
+                line-height: 4.5rem;
+            }
+            @media only screen and (min-width: 1600px) {
+                font-size: 4rem;
+                line-height: 5.2rem;
+            }
+        }
+        &__desc{
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-bottom: 1.5rem;
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 1.7rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 1.7rem;
+                line-height: 2.8rem;
+                margin-bottom: 2.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 1.8rem;
+                margin-bottom: 3rem;
+            }
+            @media only screen and (min-width: 1366px) {
+                font-size: 2rem;
+                margin-bottom: 3.2rem
+            }
+        }
+    }
+}
+
+/*
+    banner fullwidth css
+*/
+.banner__fullwidth{
+    &--bg__thumbnail{
+        height: auto;
+        object-fit: cover;
+        @media only screen and (min-width: 768px) {
+            height: 390px;
+        }
+        @media only screen and (min-width: 992px) {
+            height: 460px;
+        }
+        @media only screen and (min-width: 1200px) {
+            height: 560px;
+        }
+        @media only screen and (min-width: 1366px) {
+            height: 633px;
+        }
+    }
+    &--inner{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        @media only screen and (max-width: 767px) {
+           position: inherit;
+           top: inherit;
+            transform: inherit;
+            margin-top: 3rem;
+        }
+    }
+    &--content{
+        @media only screen and (min-width: 768px) {
+            padding-left: 1rem;
+        }
+        @media only screen and (min-width: 992px) {
+            padding-left: 3rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding-left: 10rem;
+        }
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        &__subtitle{
+            font-family: var(--primary-color);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            @media only screen and (min-width: 992px) {
+                font-size: 1.8rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 2rem;
+            }
+            @media only screen and (max-width: 767px) {
+                line-height: 2rem;
+            }
+            &.mb-25{
+                margin-bottom: 2.5rem;
+            }
+        }
+        &__title{
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            margin-bottom: 1.2rem;
+            @media only screen and (min-width: 576px) {
+                font-size: 2.5rem;
+                line-height: 3rem;
+            }
+            @media only screen and (min-width: 768px) {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 1.5rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 3.5rem;
+                line-height: 4rem;
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 4rem;
+                line-height: 4.5rem;
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 1600px) {
+                font-size: 4.5rem;
+                line-height: 5rem;
+            }
+        }
+        &__desc{
+            margin-bottom: 1.6rem;
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 2rem;
+            }
+            @media only screen and (min-width: 992px) {
+                margin-bottom: 2.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                margin-bottom: 2.7rem;
+            }
+        }
+        &.padding__right{
+            padding-left: 0;
+            @media only screen and (min-width: 768px) {
+                padding-right: 1rem;
+            }
+            @media only screen and (min-width: 992px) {
+                padding-right: 3rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                padding-right: 10rem;
+            }
+        }
+    }
+}
+
+
+
+/*
+    banner box css
+*/
+.banner__box{
+    overflow: hidden;
+    &:hover{
+        & .banner__box--thumbnail{
+            transform: scale(1.03);
+        }
+    } 
+    &--thumbnail{
+        width: 100%;
+    }
+    &--content{
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        left: 3rem;
+        @media only screen and (max-width: 479px) {
+            left: 2rem;
+            right: 1rem;
+        }
+        &__title{
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: var(--bg-black-color);
+            @media only screen and (min-width: 480px) {
+                margin-bottom: 1.2rem;
+            }
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 1.5rem;
+            }
+        }
+        &__desc{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            @media only screen and (min-width: 480px) {
+                font-size: 1.6rem;
+            }
+        }
+        &__btn{
+            &.style2{
+                border: 1px solid var(--secondary-color);
+                background: inherit;
+                color: var(--secondary-color);
+                line-height: 4rem;
+                @media only screen and (min-width: 768px) {
+                    line-height: 4.4rem;
+                }
+                @media only screen and (min-width: 992px) {
+                    line-height: 4.8rem;
+                }
+                &:hover{
+                    border-color: var(--hover-color);
+                    color: var(--hover-color);
+                }
+            }
+        }
+    }
+}
+
+
+
+/*
+    advice banner css
+*/
+
+.advice__banner{
+    &--thumbnail{
+        &.height_225{
+            height: 22rem;
+            object-fit: cover;
+            @media only screen and (min-width: 768px) {
+                height: 20rem;
+            }
+            @media only screen and (min-width: 992px) {
+                height: 22.5rem;
+            }
+        }
+    }
+    &--content{
+        &.banner__flex{
+            gap: 1.5rem;
+            @media only screen and (min-width: 576px) {
+                gap: 2rem;
+            }
+            @media only screen and (min-width: 768px) {
+                gap: 4rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                gap: 6rem;
+            }
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                width: 61%;
+            }
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                width: 69%;
+                gap: 3rem;
+            }
+            @media only screen and (max-width: 767px) {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        position: absolute;
+        top: 50%;
+        left: 4rem;
+        transform: translatey(-50%);
+        z-index: 1;
+        @media only screen and (max-width: 991px) {
+            left: 3rem;
+            right: 3rem;
+        }
+        @media only screen and (max-width: 767px) {
+            left: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+    &--title{
+        margin-bottom: 1.2rem;
+    }
+    &--btn{
+        background: var(--primary-color);
+        min-width: 130px;
+        &:hover{
+            background: var(--secondary-color);
+        }
+    }
+    &--layer__img{
+        position: absolute;
+        top: 0;
+        right: 1.2rem;
+        @media only screen and (min-width: 1200px) {
+            right: 3.2rem;
+        }
+        @media only screen and (max-width: 991px) {
+            max-width: 18rem;
+            top: 50%;
+            transform: translatey(-50%);
+        }
+        @media only screen and (max-width: 767px) {
+            max-width: 9rem;
+            top: 72%;
+        }
+        @media only screen and (max-width: 479px) {
+            max-width: 6rem;
+             top: 77%;
+        }
+    }
+}
+
+
+/*
+    home two css
+*/
+.video__banner--box{
+    &.width_100{
+        width: 100%;
+    }
+}
+
+.video__box--content{
+    @media only screen and (min-width: 768px) {
+        padding-left: 2rem;
+    }
+    @media only screen and (min-width: 992px) {
+        padding-left: 5rem;
+    }
+    @media only screen and (max-width: 767px) {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 1.5rem;
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__desc{
+        font-size: 1.5rem;
+        margin-bottom: 1.7rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.6rem;
+            margin-bottom: 2.2rem;
+        }
+    }
+}
+
+
+/*
+    grid banner css
+*/
+.grid__banner{
+    &--title{
+        margin-bottom: 1rem;
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 1.3rem;
+         }
+        @media only screen and (min-width: 1200px) {
+           font-size: 3.5rem;
+           line-height: 4rem;
+        }
+    }
+    &--desc{
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
+        }
+        @media only screen and (min-width: 992px) {
+            margin-bottom: 2.5rem;
+            font-size: 1.7rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            margin-bottom: 3.5rem;
+            font-size: 1.9rem;
+        }
+    }
+    &--content{
+        @media only screen and (max-width: 575px) {
+            padding-top: 2.3rem;
+            text-align: center;
+        }
+        &.margin__left{
+            @media only screen and (min-width: 1200px) {
+                margin-left: 4rem;
+            }
+        }
+    }
+}
+
+
+/*
+    fullwidth banner box css
+*/
+.fullwidth__banner--box__content{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    &.left{
+        left: 2rem;
+        @media only screen and (min-width: 768px) {
+            left: 3rem;
+        }
+        @media only screen and (min-width: 992px) {
+            left: 15%;
+        }
+        @media only screen and (min-width: 1200px) {
+            left: 25%;
+        }
+        @media only screen and (min-width: 1600px) {
+            left: 35%;
+        }
+    }
+    &.right{
+        left: 2rem;
+        @media only screen and (min-width: 768px) {
+            left: 3rem;
+        }
+        @media only screen and (min-width: 992px) {
+            left: 10%;
+        }
+        @media only screen and (min-width: 1200px) {
+            left: 12%;
+        }
+        @media only screen and (min-width: 1600px) {
+            left: 16%;
+        }
+    }
+}
+.fullwidth__banner--box__subtitle{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    @media only screen and (min-width: 768px) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 1.7rem;
+    }
+}
+.fullwidth__banner--box__title {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--foreground-color);
+    @media only screen and (min-width: 768px) {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    @media only screen and (min-width: 992px) {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        margin-bottom: 2.5rem;
+    }
+    @media only screen and (min-width: 1366px) {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+/*
+    sidebar banner css
+*/
+
+.sidebar__banner--content{
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    right: 2rem;
+    @media only screen and (min-width: 1200px) {
+        bottom: 4rem;
+    }
+}
+
+.sidebar__banner{
+    &--title{
+        color: var(--foreground-color);
+        margin-bottom: 1.2rem;
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+            line-height: 2.6rem;
+        }
+    }
+    &--subtitle{
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        @media only screen and (min-width: 1200px) {
+            margin-bottom: 2rem;
+        }
+    }
+    &--btn{
+        text-decoration: underline;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+}
+
+.advice__banner--content.style2{
+    left: 3rem;
+    right: 3rem;
+    text-align: center;
+}
+.advice__banner--thumbnail{
+    &.height_260{
+        height: 26rem;
+        object-fit: cover;
+    }
+}
+
+
+/*
+    home four banner vss
+*/
+.banner__box--content__style{
+    position: absolute;
+    left: 2.5rem;
+    @media only screen and (min-width: 768px) {
+        left: 3rem;
+    }
+    @media only screen and (min-width: 1200px) {
+        left: 4rem;
+    }
+    &.top{
+        top: 3rem;
+        @media only screen and (min-width: 1200px) {
+            top: 4rem;
+        }
+    }
+    &.middle{
+        top: 50%;
+        transform: translatey(-50%);
+    }
+    &--subtitle{
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin-bottom: 0.8rem;
+        @media only screen and (min-width: 992px) {
+            margin-bottom: 1rem;
+        }
+    }
+    &--title{
+        line-height: 3rem;
+        margin-bottom: 1.6rem;
+        color: var(--body-text-color);
+        @media only screen and (min-width: 768px) {
+            line-height: 3.2rem;
+        }
+        @media only screen and (min-width: 992px) {
+            line-height: 3.5rem;
+            margin-bottom: 2.2rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            line-height: 4rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &--btn{
+        @media only screen and (min-width: 768px) {
+            line-height: 4.2rem;
+            height: 3.8rem;
+            padding: 0 1.8rem;
+            font-size: 1.4rem;
+        }
+        @media only screen and (min-width: 992px) {
+            line-height: 4.4rem;
+            height: 4rem;
+            padding: 0 2.2rem;
+        }
+    }
+    &.right__side{
+        left: auto;
+        right: 4rem;
+    }
+}
+
+
+.grid__banner--product{
+    position: relative;
+    margin: -215px 3rem 0 auto;
+    @media only screen and (min-width: 992px) {
+        margin: -255px 4rem 0 auto;
+    }
+    @media only screen and (min-width: 1200px) {
+        margin: -286px 8rem 0 auto;
+    }
+    @media only screen and (max-width: 767px) {
+       display: none;
+    }
+    &.width__295{
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            width: 240px;
+        }
+    }
+    & .product__card--action{
+        opacity: 1;
+        visibility: visible;
+        top: 20px;
+        right: 20px;
+        &__btn{
+            transform: scale(1);
+        }
+    }
+    & .product__add--to__card{
+        opacity: 1;
+        visibility: visible;
+        bottom: 18px;
+    }
+    &:hover{
+        .product__add--to__card{
+            bottom: 18px;
+        }
+    }
+}
+.grid__banner--left__sidebar{
+    @media only screen and (max-width:575px) {
+        margin-bottom: 2.5rem;
+    }
+}
+.grid__banner--content__style2{
+    @media only screen and (min-width: 768px) {
+        margin: 0 0 0 2rem;
+    }
+    @media only screen and (min-width: 992px) {
+        margin: 0 0 0 5rem;
+    }
+}
+
+.banner__fullwidth--thumbnail{
+    & img{
+        @media only screen and (max-width:767px) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.banner_sm_height-250{
+    @media only screen and (max-width:767px) {
+        margin: 0 auto;
+    }
+    @media only screen and (max-width:479px) {
+        height: 25rem;
+        object-fit: cover;
+    }
+   
+}
+
+
+/*
+    collection banner  css
+*/
+.collection__banner{
+    &--thumbnail{
+        &.height_583{
+            height: 380px;
+            object-fit: cover;
+            @media only screen and (min-width: 576px) {
+                height: 340px;
+            }
+            @media only screen and (min-width: 768px) {
+                height: 360px;
+            }
+            @media only screen and (min-width:1200px) {
+                height: 460px;
+            }
+            @media only screen and (min-width:1366px) {
+                height: 583px;
+            }
+        }
+    }
+    &--content{
+        position: absolute;
+        top: 50%;
+        left: 3rem;
+        right: 3rem;
+        transform: translatey(-50%);
+    }
+    &--subtitle{
+        @media only screen and (min-width: 1200px) {
+            font-size: 2rem;
+        }
+        &.mb-20{
+            margin-bottom: 1.2rem;
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 1.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &--title{
+        @media only screen and (min-width: 1200px) {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+        @media only screen and (min-width: 1600px) {
+            font-size: 4rem;
+            line-height: 4.5rem;
+        }
+        &.mb-30{
+            margin-bottom: 2rem;
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 2.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &--desc{
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 3rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+.banner_col_left_47{
+    width: 47.2%;
+    @media only screen and (max-width: 575px) {
+       width: 100%;
+    }
+}
+.banner_col_right_52{
+    width: 52.8%;
+    @media only screen and (max-width: 575px) {
+        width: 100%;
+     }
+}
+
+/*
+    home six banner css
+*/
+.banner__box--right__sidebar{
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+        display: flex;
+        gap: 2.5rem;
+    }
+    & .banner__box.mb-30{
+        @media only screen and (min-width: 576px) and (max-width: 991px) {
+            margin-bottom: 0;
+        }
+    }
+}
+.banner__box--content__style.style__right{
+    left: auto;
+    right: 2rem;
+    @media only screen and (min-width: 480px) {
+        right: 3rem;
+    }
+}
+.banner__box--content__style6--title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.2rem;
+    @media only screen and (min-width: 992px) {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-bottom: 1.5rem;
+    }
+}
+.banner__box--thumbnail.height_sm_u_220{
+    @media only screen and (max-width: 479px) {
+        height: 22rem;
+        object-fit: cover;
+    }
+}
+/*
+    countdown banner css
+*/
+.countdown__banner--bg{
+    background: rgba(250, 238, 238, 0.9);
+}
+.countdown__content{
+    @media only screen and (max-width: 767px) {
+       padding-top: 2.5rem;
+    }
+    &--title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        @media only screen and (min-width: 576px) {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-bottom: 1.2rem;
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 4rem;
+            line-height: 4.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 4.5rem;
+            line-height: 5rem;
+        }
+    }
+    &--subtitle{
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-bottom: 1.6rem;
+        @media only screen and (min-width: 576px) {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+        @media only screen and (min-width: 768px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            font-size: 2.8rem;
+            line-height: 3.3rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+.banner__price{
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 2.2rem;
+    }
+    @media only screen and (min-width: 992px) {
+        margin-bottom: 3rem;
+    }
+    & .current__price{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: var(--primary-color);
+        @media only screen and (min-width: 576px) {
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 2.5rem;
+            line-height: 2.8rem;
+        }
+    }
+    & .old__price{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        margin-left: 1rem;
+        @media only screen and (min-width: 576px) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+        }
+    }
+}
+.countdown__banner--style{
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 992px) {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    & .countdown__item{
+        text-align: center;
+    }
+    & .countdown__number{
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 1.6rem;
+        background: var(--secondary-color);
+        color: var(--text-white-color);
+        border-radius: 50%;
+        margin-bottom: 0.6rem;
+        @media only screen and (min-width: 576px) {
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+    }
+    & .countdown__text{
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        line-height: 2rem;
+        @media only screen and (min-width: 576px) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+.grid__banner__lookbook{
+    top: 18%;
+    left: 44%;
+    @media only screen and (min-width: 768px) {
+        left: 40%;
+    }
+}

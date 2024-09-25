@@ -1,0 +1,147 @@
+/* 
+    9. Testimonial css
+*/
+.testimonial__bg{
+    background: url(../img/banner/banner-fullwidth3.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
+}
+.testimonial__section{
+    &.section--padding{
+        @media only screen and (min-width: 768px) {
+            padding-bottom: 3rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding-bottom: 3rem;
+        }
+    }
+    &--inner{
+        padding-bottom: 5rem;
+    }
+}
+.testimonial__items{
+    padding: 1.5rem;
+    background: var(--body-background-color);
+    border-radius: 5px;
+    transition: var(--transition);
+    position: relative;
+    @media only screen and (min-width: 768px) {
+        padding: 2.5rem 2rem;
+    }
+}
+.testimonial__desc{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    transition: var(--transition);
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 768px) {
+        font-size: 1.4rem;
+        
+    }
+}
+
+.testimonial__author{
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+    @media only screen and (min-width: 992px) {
+        gap: 1.5rem;
+    }
+    &__thumbnail{
+        min-width: 7rem;
+
+    }
+    &--title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 500;
+        transition: var(--transition);
+        margin-bottom: 0.2rem;
+    }
+    &--subtitle{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+        @media only screen and (min-width: 992px) {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.testimonial__vector--icon{
+    margin: 0 1rem 0 auto;
+}
+.testimonial__pagination{
+    bottom: 0 !important;
+    & .swiper-pagination-bullet{
+        border: 1px solid var(--secondary-color);
+        &.swiper-pagination-bullet-active{
+            background: var(--secondary-color);
+        }
+    }
+}
+
+/*
+    testimonial box css
+*/
+.testimonial__bg--three{
+    background: url(../img/banner/banner-fullwidth6.webp);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    &.section--padding{
+        padding-bottom: 5rem;
+        @media only screen and (min-width: 768px) {
+            padding-bottom: 6rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding-bottom: 8rem;
+        }
+    }
+}
+.testimonial__box{
+    &--thumbnail{
+        margin-bottom: 2rem;
+        & img{
+            margin: 0 auto;
+        }
+    }
+    &--desc{
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.5rem;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+            margin-bottom: 1.6rem;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            margin-bottom: 2rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding: 0 10rem;
+        }
+    }
+    &--author{
+        &__title{
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            margin-bottom: 0.6rem;
+            @media only screen and (min-width: 768px) {
+                font-size: 2rem;
+                line-height: 2.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        &__subtitle{
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

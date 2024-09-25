@@ -1,0 +1,40 @@
+/* 
+    6. Collection css
+*/
+
+.shop__collection{
+    &--img{
+        margin: 0 auto 1.2rem;
+    }
+    &--title{
+        margin-bottom: 0.3rem;
+    }
+    &--subtitle{
+        color: var(--foreground-sub-color);
+    }
+    &--link{
+        display: block;
+    }
+}
+
+.shop__collection--title__style{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    right: 2rem;
+    border: 1px solid var(--secondary-color);
+    background: var(--body-background-color);
+    height: 3.3rem;
+    line-height: 3.1rem;
+    border-radius: 0.5rem;
+    @media only screen and (min-width: 576px) {
+        height: 4rem;
+        line-height: 4rem;
+    }
+    @media only screen and (min-width: 992px) {
+        left: 2.5rem;
+        right: 2.5rem;
+        height: 4.5rem;
+        line-height: 4.3rem;
+    }
+}

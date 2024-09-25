@@ -1,0 +1,527 @@
+/* 
+    35. Other section css
+*/
+
+.image__width--text{
+  &__inner{
+    @media only screen and (min-width: 768px) {
+      padding-bottom: 5rem;
+    }
+    @media only screen and (min-width: 992px) {
+      padding-bottom: 6rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      padding-bottom: 8rem;
+    }
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+  &__thumbnail{
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      max-width: 60rem
+    }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      max-width: 52rem
+    }
+    &.thumbnail2{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        max-width: 50rem
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        max-width: 34rem
+      }
+      @media only screen and (max-width: 767px) {
+        position: inherit;
+      }
+    }
+  }
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translatey(-50%);
+  @media only screen and (min-width: 768px) {
+    width: 67%;
+  }
+  @media only screen and (min-width: 992px) {
+    left: 4rem;
+    width: 64%;
+  }
+  @media only screen and (min-width: 1366px) {
+    width: 68%;
+  }
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+    right: 3rem;
+  }
+  @media only screen and (max-width: 479px) {
+    left: 1rem;
+    right: 1rem;
+  }
+  &__title{
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 480px) {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      margin-bottom: 2rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      font-size: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__desc{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 480px) {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-bottom: 1.5rem;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 1.7rem;
+      line-height: 2.8rem;
+      margin-bottom: 1.8rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.7rem;
+      line-height: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+  }
+  &__footer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__link{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--frank-ruhl-fonts);
+    @media only screen and (min-width: 992px) {
+      font-size: 1.6rem;
+    }
+    & svg{
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+
+.bideo__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translatey(-50%) translatex(-50%);
+    &--icon {
+      width: 5.5rem;
+      height: 5.5rem;
+      background: #F7EEDD;
+      color: var(--secondary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: animate 2s linear infinite;
+      &:hover {
+        color: var(--text-white-color);
+        background: var(--primary-color);
+      }
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+  }
+  @keyframes animate {
+    0% {
+      box-shadow: 0 0 0 0 rgba(201, 127, 95, 0.7);
+    }
+    40% {
+      box-shadow: 0 0 0 50px rgba(201, 127, 95, 0);
+    }
+    80% {
+      box-shadow: 0 0 0 50px rgba(201, 127, 95, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(201, 127, 95, 0);
+    }
+  }
+
+  
+.section__shape--img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &.two{
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: auto;
+  }
+}
+
+
+/*
+  Before After css
+*/
+#comparison {
+	width: 100%;
+  padding-bottom: 43%;
+	overflow: hidden; 
+  position: relative;
+}
+
+figure { 
+  position: absolute;
+	background-image: url(../img/banner/banner5.webp);
+	background-size: cover;
+	font-size: 0;
+	width: 100%;
+  height: 143px;
+	margin: 0; 
+  @media only screen and (min-width: 400px) {
+    height: 171px;
+  }
+  @media only screen and (min-width: 480px) {
+    height: 206px;
+  }
+  @media only screen and (min-width: 576px) {
+    height: 235px;
+  }
+  @media only screen and (min-width: 768px) {
+    height: 318px;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 415px;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 503px;
+  }
+  @media only screen and (min-width: 1366px) {
+    height: 542px;
+  }
+}
+
+#divisor { 
+	background-image: url(../img/banner/banner4.webp);
+	background-size: cover;
+	position: absolute;
+	width: 50%; 
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+	bottom: 0;
+  height: 162px;
+  @media only screen and (min-width: 400px) {
+    height: 182px;
+  }
+  @media only screen and (min-width: 480px) {
+    height: 217px;
+  }
+  @media only screen and (min-width: 576px) {
+    height: 235px;
+  }
+  @media only screen and (min-width: 768px) {
+    height: 318px;
+  }
+  @media only screen and (min-width: 992px) {
+    height: 415px;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 503px;
+  }
+  @media only screen and (min-width: 1366px) {
+    height: 542px;
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    width: 4px;
+    height: calc(50% - 25px);
+    background: white;
+    z-index: 3;
+  }
+  &::before {
+    top: 0;
+    box-shadow: 0 -3px 8px 1px rgba(0,0,0,.3);
+  }
+  &::after {
+    bottom: 0;
+    box-shadow: 0 3px 8px 1px rgba(0,0,0,.3);
+  }
+}
+#handle {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+  
+  &::before,
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+  }
+  &::before {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+  }
+  &::after {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+  }
+}
+
+input[type=range]{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	position: absolute;
+	top: 50%; 
+  left: -25px;
+  transform: translateY(-50%);
+	background-color: transparent;
+	width: calc(100% + 50px); 
+  z-index: 2;
+  
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 4px solid white;
+  box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+}
+input[type=range]::-moz-range-track {
+	-moz-appearance:none;
+	height:15px;
+	width: 100%;
+	background-color: transparent; 
+	position: relative;
+	outline: none;    
+}
+
+/*
+  skin advice css 
+*/
+.skin__advice--content{
+  &__title{
+    margin-bottom: 1.6rem;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 2.5rem;
+    }
+
+  }
+  &__desc{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    @media only screen and (min-width: 576px) {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      padding: 0 2rem;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 1.6rem;
+      line-height: 3rem;
+      padding: 0 5rem;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 1.7rem;
+      padding: 0 10rem;
+      margin-bottom: 1.5rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      margin-bottom: 1.8rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      font-size: 2rem;
+    }
+  }
+  &__subtitle{
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+    @media only screen and (min-width: 992px) {
+      font-size: 2rem;
+      line-height: 3.2rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+/*
+  home six css
+*/
+.img__width--right__sidebar {
+  padding-left: 0;
+  @media only screen and (min-width: 1200px) {
+    padding-left: 1rem;
+  }
+  @media only screen and (min-width: 1366px) {
+    padding-left: 3rem;
+  }
+  @media only screen and (max-width: 991px) {
+    padding-top: 2.5rem;
+  }
+
+}
+.img__width--content__logo{
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+  @media only screen and (min-width: 480px) {
+    gap: 2rem;
+    margin: 2.2rem 0 2.8rem;
+  }
+  @media only screen and (min-width: 768px) {
+    gap: 2.5rem;
+    margin: 2.8rem 0 3rem;
+  }
+  @media only screen and (min-width: 992px) {
+    margin: 3.2rem 0 3.5rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    gap: 3rem;
+    margin: 4.5rem 0 5.2rem;
+  }
+}
+.img__width--logo{
+  &__list{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 46%;
+    @media only screen and (min-width: 576px) {
+      width: 48%;
+    }
+    @media only screen and (min-width: 768px) {
+      width: 30%;
+    }
+  }
+  &__text{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    @media only screen and (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+  }
+}
+.img__width--banner__box{
+  display: inline-block;
+}
+
+.img__width--content{
+  margin-bottom: 3.5rem;
+  @media only screen and (min-width: 1200px) {
+    margin-bottom: 6.5rem;
+  }
+  &__title{
+      font-size: 2.2rem;
+      line-height: 3rem;
+      margin-bottom: 1.2rem;
+      @media only screen and (min-width: 480px) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 1.5rem;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 4rem;
+        line-height: 5.5rem;
+        margin-bottom: 2.5rem;
+      }
+      @media only screen and (min-width: 1366px) {
+        font-size: 5rem;
+        line-height: 6.5rem;
+      }
+  }
+  &__desc{
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      color: var(--primary-color);
+      margin-bottom: 0;
+      @media only screen and (min-width: 480px) {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
+      @media only screen and (min-width: 1200px) {
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+      }
+  }
+}
+
+
+
+
+
+

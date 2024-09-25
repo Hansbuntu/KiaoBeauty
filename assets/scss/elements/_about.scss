@@ -1,0 +1,231 @@
+/* 
+    33. About page css 
+*/
+.about__Section{
+  &.mb-30{
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 575px) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+.about__thumbnail{
+  &.padding__left{
+    @media only screen and (min-width: 768px) {
+      padding-left: 4rem;
+    }
+    @media only screen and (min-width: 992px) {
+      padding-left: 6rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      padding-left: 9rem;
+    }
+  }
+}
+.about__content{
+  @media only screen and (max-width: 575px) {
+    padding-top: 2.5rem;
+    text-align: center;
+  }
+  &.padding__left{
+    @media only screen and (min-width: 768px) {
+      padding-left: 2rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      padding-left: 5rem;
+    }
+  }
+  &--subtitle{
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    @media only screen and (min-width: 768px) {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 2rem;
+     line-height: 2.4rem;
+    }
+  }
+  &--title{
+    margin-bottom: 1.4rem;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 1.6rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &--desc{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.7rem;
+    color: var(--primary-color);
+    @media only screen and (min-width: 768px) {
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      margin-bottom: 1.8rem;
+    }
+    @media only screen and (min-width: 1200px) {
+      font-size: 1.7rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
+    }
+    @media only screen and (min-width: 1366px) {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+  }
+}
+.about__experience--text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border: 1px solid var(--secondary-color);
+  background: var(--body-background-color);
+  border-radius: 0.5rem;
+  transform: translatey(-50%);
+  padding: 1rem;
+  width: 10rem;
+  @media only screen and (min-width: 768px) {
+    width: 11rem;
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 1.5rem;
+    width: 15rem;
+  }
+  @media only screen and (min-width: 1366px) {
+    width: 16rem;
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 575px) {
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+.about__experience--years{
+  font-size: 3rem;
+  line-height: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 3.5rem;
+  line-height: 2.5rem;
+  }
+  @media only screen and (min-width: 992px) {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+  @media only screen and (min-width: 1366px) {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  &__inner{
+    font-family: var(--frank-ruhl-fonts);
+  }
+}
+.about__experience--title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  @media only screen and (min-width: 992px) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+  @media only screen and (min-width: 1366px) {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+/*
+    team member css
+*/
+.team__items{
+  &:hover{
+      & .team__thumb{
+          border-color: var(--secondary-color);
+      }
+  }
+}
+
+.team__thumb{
+  position: relative;
+  line-height: 1;
+  display: inline-block;
+  border: 2px solid var(--border-color);
+  padding: 0.3rem;
+  transition: var(--transition);
+  border-radius: 10px;
+  &--img{
+      border-radius: 10px;
+  }
+}
+.team__social{
+  gap: 1rem;
+  @media only screen and (min-width: 1200px) {
+      gap: 1.2rem;
+  }
+  &--icon{
+      width: 2.8rem;
+      height: 2.8rem;
+      text-align: center;
+      background: var(--bg-offwhite-color);
+      color: var(--body-text-color);
+      line-height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover{
+          background: var(--secondary-color);
+          color: var(--text-white-color);
+      }
+      @media only screen and (min-width: 1200px) {
+          width: 3rem;
+          height: 3rem;
+          line-height: 3.2rem;
+      }
+  }
+}
+
+.team__content{
+  padding: 1rem 0 0;
+  @media only screen and (max-width: 991px) {
+      padding: 0.8rem 0 0;
+  }
+  &--subtitle{
+      color: var(--foreground-sub-color);
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 1.3rem;
+      @media only screen and (min-width: 767px) {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+      }
+  }
+  &--title{
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+      line-height: 2rem;
+      color: var(--primary-color);
+      @media only screen and (min-width: 992px) {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+      }
+      @media only screen and (min-width: 1200px) {
+          font-size: 2rem;
+          line-height: 2.2rem;
+      }
+  }
+}
+// End about css here

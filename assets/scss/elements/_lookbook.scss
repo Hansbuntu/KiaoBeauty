@@ -1,0 +1,282 @@
+/*
+    lookbook css
+*/
+.lookbook__thumbnail{
+    @media only screen and (min-width: 576px) {
+        width: 49%;
+    }
+}
+.lookbook__banner{
+    &--inner{
+        @media only screen and (max-width: 575px) {
+            flex-direction: column;
+        }
+    }
+    &--right{
+        background: rgba(250, 238, 238, 0.9);
+        display: flex;
+        align-items: center;
+        @media only screen and (min-width: 576px) {
+            width: 51%;
+        }
+    }
+    &--content{
+        padding-left: 3rem;
+        @media only screen and (min-width: 992px) {
+            padding-left: 11rem;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding-left: 12rem;
+        }
+        @media only screen and (min-width: 1366px) {
+            padding-left: 15rem;
+        }
+        @media only screen and (max-width: 575px) {
+           text-align: center;
+           padding: 5rem 2rem;
+           width: 100%;
+        }
+        &__subtitle{
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 0.6rem;
+            @media only screen and (min-width: 992px) {
+                font-size: 1.7rem;
+                margin-bottom: 0.8rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+        }
+        &__title{
+            font-size: 2.2rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+            @media only screen and (min-width: 768px) {
+                font-size: 2.5rem;
+                line-height: 3.2rem;
+                margin-bottom: 1.2rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 3rem;
+                line-height: 3.5rem;
+                margin-bottom: 1.5rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 3.5rem;
+                line-height: 4rem;
+            }
+            @media only screen and (min-width: 1366px) {
+                font-size: 4rem;
+                line-height: 4.5rem;
+            }
+        }
+        &__desc{
+            font-size: 1.5rem;
+            margin-bottom: 2.2rem;
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 2.5rem;
+            }
+            @media only screen and (min-width: 992px) {
+                font-size: 1.6rem;
+                margin-bottom: 3rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: 1.7rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
+}
+
+.lookbook__banner--product{
+    position: absolute;
+    top: 50%;
+    right: -7rem;
+    transform: translatey(-50%);
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+    & .product__card--action{
+        opacity: 1;
+        visibility: visible;
+        top: 20px;
+        right: 20px;
+        &__btn{
+            transform: scale(1);
+        }
+    }
+    & .product__add--to__card{
+        opacity: 1;
+        visibility: visible;
+        bottom: 18px;
+    }
+    &:hover{
+        & .product__add--to__card{
+            bottom: 18px;
+        }
+    }
+    &.width__295{
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            width: 23.6rem;
+        }
+    }
+}
+
+.lookbook__box{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    @media only screen and (min-width: 992px) {
+        width: 4rem;
+        height: 4rem;
+    }
+    &:hover{
+        & .lookbook__product{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &.one{
+        top: 10%;
+        left: 25%;
+        @media only screen and (min-width: 992px) {
+            top: 8%;
+            left: 38%;
+        }
+        @media only screen and (min-width: 1366px) {
+            top: 8%;
+            left: 38%;
+        }
+        @media only screen and (min-width: 1600px) {
+            left: 50%;
+        }
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+    &.two{
+        left: 9rem;
+        bottom: 13%;
+        @media only screen and (min-width: 1366px) {
+            bottom: 12%;
+            left: 13rem;
+        }
+        @media only screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+    &.three{
+        top: 42%;
+        right: 45%;
+        transform: translatey(-50%);
+        @media only screen and (min-width: 480px) {
+            right: 40%;
+            top: 50%;
+        }
+        @media only screen and (min-width: 768px) {
+            right: 50%;
+        }
+        @media only screen and (min-width: 1366px) {
+            right: 42%;
+        }
+        @media only screen and (min-width: 1600px) {
+            right: 34%;
+        }
+    }
+    &--icon{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: var(--body-background-color);
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            left: 0.7rem;
+            top: 0.7rem;
+            @media only screen and (min-width: 992px) {
+                left: 1rem;
+                top: 1rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+.lookbook__product{
+    position: absolute;
+    background: var(--body-background-color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+    padding: 1rem;
+    width: 27rem;
+    gap: 1.2rem;
+    border-radius: 0.5rem;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    &.one{
+        top: 5.5rem;
+        left: -12rem;
+        @media only screen and (min-width: 992px) {
+            top: 6.2rem;
+            left: -11.3rem;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 17px solid var(--body-background-color);
+            left: 50%;
+            top: -17px;
+            transform: translatex(-50%);
+        }
+    }
+    &.two{
+        bottom: 6.2rem;
+        top: auto;
+        left: -11.3rem;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 17px solid var(--body-background-color);
+            left: 50%;
+            bottom: -17px;
+            transform: translatex(-50%);
+        }
+    }
+    
+    &--thumbnail{
+        width: 9rem;
+    }
+    &--content{
+        &__title{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+.lookbook__product--link{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 500;
+    color: var(--foreground-sub-color);
+    border-bottom: 1px solid var(--foreground-sub-color);
+}
