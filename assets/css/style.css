@@ -277,6 +277,24 @@ blockquote footer { font-size: .92rem; color: var(--muted); }
 .founders-copy p { color: var(--muted); }
 .founders-copy strong { color: var(--slate-ink); font-weight: 600; }
 
+.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: clamp(48px, 7vw, 80px); }
+.member {
+  background: var(--offwhite); border-radius: var(--radius); padding: 2rem 1.5rem; text-align: center;
+  transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+}
+.member:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.member-initials {
+  display: grid; place-items: center; width: 72px; height: 72px; margin: 0 auto 1.1rem; border-radius: 50%;
+  background: linear-gradient(140deg, var(--lavender-soft), var(--sage-soft));
+  font-family: var(--serif); font-size: 1.4rem; color: var(--slate-ink);
+}
+.member h3 { font-size: 1.35rem; margin-bottom: .2em; }
+.member-role { color: var(--lavender); font-family: var(--serif); font-style: italic; margin-bottom: 1rem; }
+.member-links { display: flex; justify-content: center; gap: 1.2rem; }
+.member-links a, .copy a { color: var(--slate); text-decoration: underline; text-decoration-color: var(--sage); text-underline-offset: 4px; transition: text-decoration-color .3s; }
+.member-links a { font-size: .9rem; }
+.member-links a:hover, .copy a:hover { text-decoration-color: var(--slate); }
+
 /* Contact */
 .contact-card {
   display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 64px); align-items: center;
@@ -328,7 +346,7 @@ a.contact-link:hover { background: #fff; transform: translateX(6px); }
   .hero-art { max-width: 420px; }
   .product, .product-flip { grid-template-columns: 1fr; }
   .product-flip .product-media { order: 0; }
-  .pillars { grid-template-columns: 1fr; }
+  .pillars, .team { grid-template-columns: 1fr; }
   .peek-row { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; }
   .peek-item { scroll-snap-align: start; }
   .founders-logo img { width: 240px; }
